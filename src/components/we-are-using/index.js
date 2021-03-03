@@ -257,6 +257,11 @@ const companies = [
 		name: 'Datapedia',
 		href: 'https://datapedia.info/',
 		logo: 'datapedia.png'
+	},
+	{
+		name: 'JDLT',
+		href: 'https://jdlt.co.uk/',
+		logo: 'jdlt.svg'
 	}
 ];
 
@@ -264,7 +269,7 @@ const companies = [
 export default function WeAreUsing() {
 	return (
 		<ul class={styles.root}>
-			{companies.map(c => (
+			{companies.map((c) => (
 				<li key={c.name} class={styles.item}>
 					<a
 						href={c.href}
